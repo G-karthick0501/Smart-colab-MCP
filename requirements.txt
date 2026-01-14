@@ -1,0 +1,6 @@
+flask
+requests
+pyngrok
+psutil
+GPUtil
+mcp-memory-service

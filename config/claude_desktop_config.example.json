@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "smart-colab": {
+      "command": "<PATH_TO_VENV_PYTHON>",
+      "args": ["<PATH_TO>/mcp_smart_colab_v2.py"],
+      "env": {
+        "COLAB_URL": "<NGROK_HTTPS_URL>",
+        "LOCAL_SAVE_DIR": "<LOCAL_RESULTS_DIR>",
+        "CHECKPOINT_DIR": "<LOCAL_CHECKPOINT_DIR>"
+      }
+    },
+    "memory": {
+      "command": "<PATH_TO_VENV_PYTHON>",
+      "args": ["-m", "mcp_memory_service.server"],
+      "env": {
+        "MCP_MEMORY_CHROMA_PATH": "<LOCAL_MEMORY_DB>",
+        "MCP_MEMORY_BACKUPS_PATH": "<LOCAL_MEMORY_BACKUPS>"
+      }
+    }
+  }
+}

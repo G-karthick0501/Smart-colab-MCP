@@ -1,0 +1,17 @@
+# Virtual environments
+venv/
+edaautomate/
+Scripts/
+Lib/
+pyvenv.cfg
+
+# Runtime data
+results/
+checkpoints/
+memory_db/
+memory_backups/
+
+# OS / editor
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
